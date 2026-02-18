@@ -1,6 +1,15 @@
 import React from 'react';
 import my from '../../assets/my.png';
-import theme_pattern from '../../assets/theme_pattern.svg'; // This might need adjustment for dark mode (invert or replace)
+import theme_pattern from '../../assets/theme_pattern.svg'; 
+import { SiMongodb } from "react-icons/si";
+import { BiLogoJavascript } from "react-icons/bi";
+import { SiPhp } from "react-icons/si";
+import { FaJava } from "react-icons/fa6";
+import { FaReact } from "react-icons/fa6";
+import { FaNode } from "react-icons/fa";
+import { SiMysql } from "react-icons/si";
+import { FaGitAlt } from "react-icons/fa";
+import { FaPython } from "react-icons/fa";
 
 const About = () => {
     return (
@@ -54,14 +63,14 @@ const About = () => {
                         <div className="bg-gradient-to-r from-gray-800/50 to-gray-900/50 backdrop-blur-sm p-8 rounded-2xl border border-white/10 shadow-inner">
                             <h2 className="text-2xl font-semibold text-white/90 mb-6">Core Skills</h2>
                             <div className="flex flex-wrap gap-3">
-                                <span className="px-4 py-2 bg-blue-500/20 text-blue-300 rounded-lg font-medium border border-blue-500/30">Java</span>
-                                <span className="px-4 py-2 bg-blue-500/20 text-blue-300 rounded-lg font-medium border border-blue-500/30">PHP</span>
-                                <span className="px-4 py-2 bg-blue-500/20 text-blue-300 rounded-lg font-medium border border-blue-500/30">JavaScript</span>
-                                <span className="px-4 py-2 bg-purple-500/20 text-purple-300 rounded-lg font-medium border border-purple-500/30">React.js</span>
-                                <span className="px-4 py-2 bg-purple-500/20 text-purple-300 rounded-lg font-medium border border-purple-500/30">Node.js</span>
-                                <span className="px-4 py-2 bg-green-500/20 text-green-300 rounded-lg font-medium border border-green-500/30">MySQL</span>
-                                <span className="px-4 py-2 bg-green-500/20 text-green-300 rounded-lg font-medium border border-green-500/30">MongoDB</span>
-                                <span className="px-4 py-2 bg-orange-500/20 text-orange-300 rounded-lg font-medium border border-orange-500/30">Git</span>
+                                <span className="px-4 py-2 bg-blue-500/20 text-blue-300 rounded-lg font-medium border border-blue-500/30"><FaJava />Java</span>
+                                <span className="px-4 py-2 bg-blue-500/20 text-blue-300 rounded-lg font-medium border border-blue-500/30"><SiPhp />PHP</span>
+                                <span className="px-4 py-2 bg-blue-500/20 text-blue-300 rounded-lg font-medium border border-blue-500/30"><BiLogoJavascript />JavaScript</span>
+                                <span className="px-4 py-2 bg-purple-500/20 text-purple-300 rounded-lg font-medium border border-purple-500/30"><FaReact />React.js</span>
+                                <span className="px-4 py-2 bg-purple-500/20 text-purple-300 rounded-lg font-medium border border-purple-500/30"><FaNode />Node.js</span>
+                                <span className="px-4 py-2 bg-green-500/20 text-green-300 rounded-lg font-medium border border-green-500/30"><SiMysql />MySQL</span>
+                                <span className="px-4 py-2 bg-green-500/20 text-green-300 rounded-lg font-medium border border-green-500/30"><SiMongodb />MongoDB</span>
+                                <span className="px-4 py-2 bg-orange-500/20 text-orange-300 rounded-lg font-medium border border-orange-500/30"><FaGitAlt />Git</span>
                             </div>
                         </div>
                     </div>
@@ -87,11 +96,11 @@ const About = () => {
                                 <h3 className="text-xl font-semibold text-white/90">Programming Languages</h3>
                             </div>
                             <div className="flex flex-wrap gap-3">
-                                <span className="px-4 py-2 bg-blue-500/20 text-blue-300 rounded-lg border border-blue-500/30">Java</span>
-                                <span className="px-4 py-2 bg-blue-500/20 text-blue-300 rounded-lg border border-blue-500/30">PHP</span>
-                                <span className="px-4 py-2 bg-blue-500/20 text-blue-300 rounded-lg border border-blue-500/30">JavaScript</span>
-                                <span className="px-4 py-2 bg-blue-500/20 text-blue-300 rounded-lg border border-blue-500/30">Python</span>
-                                <span className="px-4 py-2 bg-purple-500/20 text-purple-300 rounded-lg border border-purple-500/30">OOP</span>
+                                <span className="px-4 py-2 bg-blue-500/20 text-blue-300 rounded-lg border border-blue-500/30"><FaJava />Java</span>
+                                <span className="px-4 py-2 bg-blue-500/20 text-blue-300 rounded-lg border border-blue-500/30"><SiPhp />PHP</span>
+                                <span className="px-4 py-2 bg-blue-500/20 text-blue-300 rounded-lg border border-blue-500/30"><BiLogoJavascript />JavaScript</span>
+                                <span className="px-4 py-2 bg-blue-500/20 text-blue-300 rounded-lg border border-blue-500/30"><FaPython />Python</span>
+                                {/* <span className="px-4 py-2 bg-purple-500/20 text-purple-300 rounded-lg border border-purple-500/30">OOP</span> */}
                             </div>
                         </div>
 
@@ -128,7 +137,7 @@ const About = () => {
                             <div className="flex flex-wrap gap-3">
                                 <span className="px-4 py-2 bg-green-500/20 text-green-300 rounded-lg border border-green-500/30">MySQL</span>
                                 <span className="px-4 py-2 bg-green-500/20 text-green-300 rounded-lg border border-green-500/30">MS SQL Server</span>
-                                <span className="px-4 py-2 bg-green-500/20 text-green-300 rounded-lg border border-green-500/30">MongoDB</span>
+                                <span className="px-4 py-2 bg-green-500/20 text-green-300 rounded-lg border border-green-500/30"><SiMongodb />MongoDB</span>
                                 <span className="px-4 py-2 bg-green-500/20 text-green-300 rounded-lg border border-green-500/30">Node.js</span>
                                 <span className="px-4 py-2 bg-green-500/20 text-green-300 rounded-lg border border-green-500/30">PHP Backend</span>
                                 <span className="px-4 py-2 bg-green-500/20 text-green-300 rounded-lg border border-green-500/30">Auth</span>
