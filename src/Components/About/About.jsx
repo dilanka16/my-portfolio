@@ -10,6 +10,13 @@ import { FaNode } from "react-icons/fa";
 import { SiMysql } from "react-icons/si";
 import { FaGitAlt } from "react-icons/fa";
 import { FaPython } from "react-icons/fa";
+import { FaHtml5 } from "react-icons/fa6";
+import { IoLogoCss3 } from "react-icons/io";
+import { SiTailwindcss } from "react-icons/si";
+import { FaBootstrap } from "react-icons/fa";
+import { DiMsqlServer } from "react-icons/di";
+import { BiLogoVisualStudio } from "react-icons/bi";
+import { SiPostman } from "react-icons/si";
 
 const About = () => {
     return (
@@ -115,12 +122,12 @@ const About = () => {
                                 <h3 className="text-xl font-semibold text-white/90">Frontend Technologies</h3>
                             </div>
                             <div className="flex flex-wrap gap-3">
-                                <span className="px-4 py-2 bg-purple-500/20 text-purple-300 rounded-lg border border-purple-500/30">HTML5</span>
-                                <span className="px-4 py-2 bg-purple-500/20 text-purple-300 rounded-lg border border-purple-500/30">CSS3</span>
-                                <span className="px-4 py-2 bg-purple-500/20 text-purple-300 rounded-lg border border-purple-500/30">JavaScript</span>
-                                <span className="px-4 py-2 bg-purple-500/20 text-purple-300 rounded-lg border border-purple-500/30">React.js</span>
-                                <span className="px-4 py-2 bg-purple-500/20 text-purple-300 rounded-lg border border-purple-500/30">Tailwind CSS</span>
-                                <span className="px-4 py-2 bg-purple-500/20 text-purple-300 rounded-lg border border-purple-500/30">Bootstrap</span>
+                                <span className="px-4 py-2 bg-purple-500/20 text-purple-300 rounded-lg border border-purple-500/30"><FaHtml5 />HTML5</span>
+                                <span className="px-4 py-2 bg-purple-500/20 text-purple-300 rounded-lg border border-purple-500/30"><IoLogoCss3 />CSS3</span>
+                                <span className="px-4 py-2 bg-purple-500/20 text-purple-300 rounded-lg border border-purple-500/30"><BiLogoJavascript />JavaScript</span>
+                                <span className="px-4 py-2 bg-purple-500/20 text-purple-300 rounded-lg border border-purple-500/30"><FaReact />React.js</span>
+                                <span className="px-4 py-2 bg-purple-500/20 text-purple-300 rounded-lg border border-purple-500/30"><SiTailwindcss />Tailwind CSS</span>
+                                <span className="px-4 py-2 bg-purple-500/20 text-purple-300 rounded-lg border border-purple-500/30"><FaBootstrap />Bootstrap</span>
                             </div>
                         </div>
 
@@ -135,11 +142,11 @@ const About = () => {
                                 <h3 className="text-xl font-semibold text-white/90">Databases & Backend</h3>
                             </div>
                             <div className="flex flex-wrap gap-3">
-                                <span className="px-4 py-2 bg-green-500/20 text-green-300 rounded-lg border border-green-500/30">MySQL</span>
-                                <span className="px-4 py-2 bg-green-500/20 text-green-300 rounded-lg border border-green-500/30">MS SQL Server</span>
+                                <span className="px-4 py-2 bg-green-500/20 text-green-300 rounded-lg border border-green-500/30"><SiMysql />MySQL</span>
+                                <span className="px-4 py-2 bg-green-500/20 text-green-300 rounded-lg border border-green-500/30"><DiMsqlServer />MS SQL Server</span>
                                 <span className="px-4 py-2 bg-green-500/20 text-green-300 rounded-lg border border-green-500/30"><SiMongodb />MongoDB</span>
-                                <span className="px-4 py-2 bg-green-500/20 text-green-300 rounded-lg border border-green-500/30">Node.js</span>
-                                <span className="px-4 py-2 bg-green-500/20 text-green-300 rounded-lg border border-green-500/30">PHP Backend</span>
+                                <span className="px-4 py-2 bg-green-500/20 text-green-300 rounded-lg border border-green-500/30"><FaNode />Node.js</span>
+                                <span className="px-4 py-2 bg-green-500/20 text-green-300 rounded-lg border border-green-500/30"><SiPhp />PHP Backend</span>
                                 <span className="px-4 py-2 bg-green-500/20 text-green-300 rounded-lg border border-green-500/30">Auth</span>
                                 <span className="px-4 py-2 bg-green-500/20 text-green-300 rounded-lg border border-green-500/30">DB Design</span>
                             </div>
@@ -157,9 +164,9 @@ const About = () => {
                                 <h3 className="text-xl font-semibold text-white/90">Tools & Dev Practices</h3>
                             </div>
                             <div className="flex flex-wrap gap-3">
-                                <span className="px-4 py-2 bg-orange-500/20 text-orange-300 rounded-lg border border-orange-500/30">Git</span>
-                                <span className="px-4 py-2 bg-orange-500/20 text-orange-300 rounded-lg border border-orange-500/30">Postman</span>
-                                <span className="px-4 py-2 bg-orange-500/20 text-orange-300 rounded-lg border border-orange-500/30">Version Control</span>
+                                <span className="px-4 py-2 bg-orange-500/20 text-orange-300 rounded-lg border border-orange-500/30"><FaGitAlt />Git</span>
+                                <span className="px-4 py-2 bg-orange-500/20 text-orange-300 rounded-lg border border-orange-500/30"><SiPostman />Postman</span>
+                                <span className="px-4 py-2 bg-orange-500/20 text-orange-300 rounded-lg border border-orange-500/30"><BiLogoVisualStudio />Version Studio</span>
                                 <span className="px-4 py-2 bg-orange-500/20 text-orange-300 rounded-lg border border-orange-500/30">API Testing</span>
                             </div>
                         </div>
