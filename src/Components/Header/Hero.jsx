@@ -1,6 +1,6 @@
 import React from 'react';
 import my from '../../assets/my.png';
-import dilanka from '../../assets/dilanka.pdf';
+import dilanka from '../../assets/DIlanka Rajapaksha.pdf';
 
 const Hero = () => {
     // Smooth scroll to contact section
