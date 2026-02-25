@@ -51,7 +51,7 @@ const Hero = () => {
                                shadow-[0_0_20px_rgba(59,130,246,0.3)] hover:shadow-[0_0_30px_rgba(59,130,246,0.6)]
                                border border-white/10 text-center"
                 >
-                    Connect With Me
+                    Connect With Me.
                 </div>
 
                 {/* My Resume Button */}
