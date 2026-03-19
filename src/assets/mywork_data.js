@@ -30,7 +30,7 @@ const mywork_data = [
         w_img: fiton,
         category: "E-commerce",
         technologies: ["HTML5", "CSS3", "JavaScript", "Git"],
-        link: "fiton.lk"  // replace with actual project URL
+        link: "https://fiton.lk/"  // replace with actual project URL
     },
     {
         w_no: 2,
@@ -39,7 +39,7 @@ const mywork_data = [
         w_img: sri,
         category: "Travel",
         technologies: ["HTML5", "CSS3", "JavaScript", "Git"],
-        link: "srilankawildadventures.com"
+        link: "https://www.srilankawildadventures.com/"
     },
     {
         w_no: 3,
@@ -62,7 +62,7 @@ const mywork_data = [
     {
         w_no: 4,
         w_name: "Computer Shop",
-        w_desc: "A food ordering platform with real-time tracking and secure payments.",
+        w_desc: "An online computer shop offering a wide range of hardware, software, and accessories with secure checkout and fast delivery.",
         w_img: computer,
         category: "Web App",
         technologies: ["React", "Tailwind CSS", "nodejs", "express","javascript","mongodb","googleoauth", "API Integration", "Git"],
