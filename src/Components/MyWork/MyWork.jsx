@@ -2,71 +2,89 @@ import React, { useState } from 'react';
 import theme_pattern from '../../assets/theme_pattern.svg';
 import mywork_data from '../../assets/mywork_data.js';
 import arrow_icon from '../../assets/arrow_icon.svg';
+// import { SiMysql, SiMicrosoftsqlserver } from 'react-icons/si';
 
 // Technology icons (make sure react-icons is installed)
-import { 
-    FaReact, 
-    FaNodeJs, 
-    FaJsSquare, 
-    FaHtml5, 
-    FaCss3Alt, 
+import {
+    FaReact,
+    FaNodeJs,
+    FaJsSquare,
+    FaHtml5,
+    FaCss3Alt,
     FaGitAlt,
     FaDatabase,
     FaYoutube,
     FaTiktok,
-    FaFacebook
+    FaFacebook,
+    FaVideo
 } from 'react-icons/fa';
-import { 
-    SiTailwindcss, 
-    SiMongodb, 
+import {
+    SiTailwindcss,
+    SiMongodb,
     SiExpress,
     SiAdobephotoshop,
     SiAdobeillustrator,
     SiFirebase,
     SiDjango,
     SiVuedotjs,
-    SiPostgresql
+    SiPostgresql,
+    SiPhp,
+    SiAdobepremierepro,
+    SiAdobelightroom,
+    SiGoogle,
 } from 'react-icons/si';
 
-// Helper function to get icon component based on technology name
+// Technology map with icon component and brand color (Tailwind arbitrary value)
+const techMap = {
+    'react': { icon: FaReact, color: 'text-[#61DAFB]' },
+    'node': { icon: FaNodeJs, color: 'text-[#339933]' },
+    'nodejs': { icon: FaNodeJs, color: 'text-[#339933]' },
+    'javascript': { icon: FaJsSquare, color: 'text-[#F7DF1E]' },
+    'html': { icon: FaHtml5, color: 'text-[#E34F26]' },
+    'html5': { icon: FaHtml5, color: 'text-[#E34F26]' },
+    'css': { icon: FaCss3Alt, color: 'text-[#1572B6]' },
+    'css3': { icon: FaCss3Alt, color: 'text-[#1572B6]' },
+    'git': { icon: FaGitAlt, color: 'text-[#F05032]' },
+    'database': { icon: FaDatabase, color: 'text-[#336791]' },
+    'mongodb': { icon: SiMongodb, color: 'text-[#47A248]' },
+    'mongo': { icon: SiMongodb, color: 'text-[#47A248]' },
+    'tailwind': { icon: SiTailwindcss, color: 'text-[#06B6D4]' },
+    'tailwindcss': { icon: SiTailwindcss, color: 'text-[#06B6D4]' },
+    'express': { icon: SiExpress, color: 'text-gray-300' }, // no official brand color
+    'photoshop': { icon: SiAdobephotoshop, color: 'text-[#31A8FF]' },
+    'illustrator': { icon: SiAdobeillustrator, color: 'text-[#FF9A00]' },
+    'firebase': { icon: SiFirebase, color: 'text-[#FFCA28]' },
+    'django': { icon: SiDjango, color: 'text-[#092E20]' },
+    'vue': { icon: SiVuedotjs, color: 'text-[#4FC08D]' },
+    'postgresql': { icon: SiPostgresql, color: 'text-[#336791]' },
+    'youtube': { icon: FaYoutube, color: 'text-[#FF0000]' },
+    'tiktok': { icon: FaTiktok, color: 'text-[#25F4EE]' }, // cyan for visibility on dark bg
+    'facebook': { icon: FaFacebook, color: 'text-[#1877F2]' },
+    'php': { icon: SiPhp, color: 'text-[#777BB4]' },
+    'premierepro': { icon: SiAdobepremierepro, color: 'text-[#9999FF]' },
+    'lightroom': { icon: SiAdobelightroom, color: 'text-[#31A8FF]' },
+    'capcut': { icon: FaVideo, color: 'text-[#FF5C5C]' },
+    'filmora': { icon: FaVideo, color: 'text-[#FF5C5C]' },
+    'google': { icon: SiGoogle, color: 'text-[#4285F4]' }, // Google Blue
+    'googleoauth': { icon: SiGoogle, color: 'text-[#4285F4]' }, // for OAuth reference
+    //  'mysql': { icon: SiMysql, color: 'text-[#4479A1]' }, // MySQL official blue
+    // 'mssql': { icon: SiMicrosoftsqlserver, color: 'text-[#CC2927]' },
+    // 'sqlserver': { icon: SiMicrosoftsqlserver, color: 'text-[#CC2927]' },
+    // 'microsoftsql': { icon: SiMicrosoftsqlserver, color: 'text-[#CC2927]' },
+};
+
+// Helper function to get icon component with brand color
 const getTechIcon = (tech) => {
     const techLower = tech.toLowerCase();
-    
-    const iconMap = {
-        'react': FaReact,
-        'node': FaNodeJs,
-        'nodejs': FaNodeJs,
-        'javascript': FaJsSquare,
-        'html': FaHtml5,
-        'html5': FaHtml5,
-        'css': FaCss3Alt,
-        'css3': FaCss3Alt,
-        'git': FaGitAlt,
-        'database': FaDatabase,
-        'mongodb': SiMongodb,
-        'mongo': SiMongodb,
-        'tailwind': SiTailwindcss,
-        'tailwindcss': SiTailwindcss,
-        'express': SiExpress,
-        'photoshop': SiAdobephotoshop,
-        'illustrator': SiAdobeillustrator,
-        'firebase': SiFirebase,
-        'django': SiDjango,
-        'vue': SiVuedotjs,
-        'postgresql': SiPostgresql,
-        'youtube': FaYoutube,
-        'tiktok': FaTiktok,
-        'facebook': FaFacebook,
-    };
 
-    for (const [key, Icon] of Object.entries(iconMap)) {
+    for (const [key, { icon: Icon, color }] of Object.entries(techMap)) {
         if (techLower.includes(key)) {
-            return <Icon className="text-lg" title={tech} />;
+            return <Icon className={`text-lg ${color}`} title={tech} />;
         }
     }
-    
+
     // Fallback icon
-    return <FaReact className="text-lg opacity-50" title={tech} />;
+    return <FaReact className="text-lg text-gray-400 opacity-70" title={tech} />;
 };
 
 const MyWork = () => {
@@ -79,7 +97,6 @@ const MyWork = () => {
     const filteredProjects = mywork_data.filter(project => {
         if (selectedCategory === 'All') return true;
         if (selectedCategory === 'Web Sites') {
-            // Include all projects that are NOT Graphic Design or Social Media
             return project.category !== 'Graphic Design' && project.category !== 'Social Media';
         }
         if (selectedCategory === 'Graphic Design') {
@@ -158,7 +175,7 @@ const MyWork = () => {
                                     {work.w_desc}
                                 </p>
 
-                                {/* Technology Stack with Icons */}
+                                {/* Technology Stack with Icons - now in original colors */}
                                 {work.technologies && work.technologies.length > 0 && (
                                     <div className="mb-4">
                                         <p className="text-xs uppercase tracking-wider text-gray-400 mb-2">Technologies used</p>

@@ -4,17 +4,22 @@ import project3_img from '../assets/project_3.svg';
 import project4_img from '../assets/project_4.svg';
 import project5_img from '../assets/project_5.svg';
 import project6_img from '../assets/project_6.svg';
+import portfolio from '../assets/portfolio.png';
+import food from '../assets/food.png';
+import weather from '../assets/weather.png';
 import highfive from '../assets/highfive.png';
+import computer from '../assets/computer.jpeg';
 import limited from '../assets/limited.png';
 import dilango from '../assets/dilango.png';
+import kanban from '../assets/kanban.png';
 import feel from '../assets/feel.png';
 import fiton from '../assets/fiton3.png';
 import sri from '../assets/sri.png';
 
-// Social media images – replace with your own or reuse existing ones
-import youtube_img from '../assets/project_1.svg';   // temporary placeholder
-import tiktok_img from '../assets/project_2.svg';    // temporary placeholder
-import facebook_img from '../assets/project_3.svg';   // temporary placeholder
+// // Social media images – replace with your own or reuse existing ones
+// import youtube_img from '../assets/project_1.svg';   // temporary placeholder
+// import tiktok_img from '../assets/project_2.svg';    // temporary placeholder
+// import facebook_img from '../assets/project_3.svg';   // temporary placeholder
 
 const mywork_data = [
     // Existing Web Projects (they will appear under "Web Sites" filter)
@@ -25,7 +30,7 @@ const mywork_data = [
         w_img: fiton,
         category: "E-commerce",
         technologies: ["HTML5", "CSS3", "JavaScript", "Git"],
-        link: "#"  // replace with actual project URL
+        link: "fiton.lk"  // replace with actual project URL
     },
     {
         w_no: 2,
@@ -33,43 +38,52 @@ const mywork_data = [
         w_desc: "An interactive travel planning app that helps users discover destinations and book trips.",
         w_img: sri,
         category: "Travel",
-        technologies: ["React", "Node.js", "Tailwind CSS", "Git"],
-        link: "#"
+        technologies: ["HTML5", "CSS3", "JavaScript", "Git"],
+        link: "srilankawildadventures.com"
     },
     {
         w_no: 3,
         w_name: "Portfolio Website",
         w_desc: "A personal portfolio to showcase creative work and professional skills.",
-        w_img: project3_img,
+        w_img: portfolio,
         category: "Personal",
-        technologies: ["React", "MongoDB", "Express", "Git"],
-        link: "#"
+        technologies: ["React", "Tailwind CSS", "javascript", "Git"],
+        link: "https://my-portfolio-eta-rose-73.vercel.app/"
     },
     {
         w_no: 4,
         w_name: "Food Delivery App",
         w_desc: "A food ordering platform with real-time tracking and secure payments.",
-        w_img: project4_img,
+        w_img: food,
         category: "Mobile App",
-        technologies: ["React Native", "Node.js", "Firebase", "Git"],
+        technologies: ["React", "Tailwind CSS", "nodejs", "express","javascript",, "API Integration", "Git"],
+        link: "#"
+    },
+    {
+        w_no: 4,
+        w_name: "Computer Shop",
+        w_desc: "A food ordering platform with real-time tracking and secure payments.",
+        w_img: computer,
+        category: "Web App",
+        technologies: ["React", "Tailwind CSS", "nodejs", "express","javascript","mongodb","googleoauth", "API Integration", "Git"],
         link: "#"
     },
     {
         w_no: 5,
-        w_name: "Dashboard UI",
-        w_desc: "An admin dashboard with analytics, charts, and user management.",
-        w_img: project5_img,
+        w_name: "KANBAN SYSTEM",
+        w_desc: "KANBAN System for tyre company",
+        w_img: kanban,
         category: "Web App",
-        technologies: ["Vue.js", "Django", "PostgreSQL", "Git"],
+        technologies: ["php", "HTML5", "CSS3", "JavaScript","microsoftsql", "Git"],
         link: "#"
     },
     {
         w_no: 6,
         w_name: "Weather App",
         w_desc: "A minimal weather forecast app using a third‑party API.",
-        w_img: project6_img,
+        w_img: weather,
         category: "Utility",
-        technologies: ["JavaScript", "API Integration", "CSS3", "Git"],
+        technologies: ["React","javaScript", "CSS3", "Git"],
         link: "#"
     },
 
@@ -80,7 +94,7 @@ const mywork_data = [
         w_desc: "Entertainment",
         w_img: dilango,  // replace with actual image
         category: "Social Media",
-        technologies: ["YouTube", "Video Editing"],
+        technologies: ["YouTube","premierepro", "lightroom","photoshop","capcut","filmora"],
         link: "https://www.youtube.com/@dilanka9716"
     },
     {
@@ -89,7 +103,7 @@ const mywork_data = [
         w_desc: "Entertainment",
         w_img: highfive,  // replace with actual image
         category: "Social Media",
-        technologies: ["YouTube", "Video Editing"],
+        technologies: ["YouTube","premierepro", "lightroom","photoshop","capcut","filmora"],
         link: "https://www.youtube.com/@highfive972"
     },
     {
@@ -98,7 +112,7 @@ const mywork_data = [
         w_desc: "Short form creative videos",
         w_img: feel,   // replace with actual image
         category: "Social Media",
-        technologies: ["TikTok", "Short Videos"],
+        technologies: ["TikTok","premierepro", "lightroom","photoshop","capcut","filmora"],
         link: "https://www.tiktok.com/@feel_881"
     },
     {
@@ -107,7 +121,7 @@ const mywork_data = [
         w_desc: "Music Shorts",
         w_img: limited, // replace with actual image
         category: "Social Media",
-        technologies: ["Facebook", "Community Management"],
+        technologies: ["Facebook", "Community Management","premierepro", "lightroom","photoshop","capcut","filmora"],
         link: "https://www.facebook.com/profile.php?id=100070415374073"
     }
 ];
