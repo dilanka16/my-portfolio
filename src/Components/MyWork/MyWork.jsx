@@ -124,7 +124,7 @@ const MyWork = () => {
             {/* Header Section */}
             <div className="relative text-center mb-16">
                 <h1 className="text-4xl md:text-5xl font-bold text-white/90 inline-block">
-                    My Latest Work
+                    My Latest Works
                 </h1>
                 <img
                     src={theme_pattern}
